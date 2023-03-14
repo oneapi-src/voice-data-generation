@@ -1,0 +1,26 @@
+*make sure of the directory you are in is WaveRNN*
+
+cd ../../data
+
+
+*now to dowload the data set in tar format from LJSpeech*
+
+wget https://data.keithito.com/data/speech/LJSpeech-1.1.tar.bz2
+
+
+*Extract the LJSpeech-1.1.tar.bz2 file that was downloaded to have readMe.txt, metadata.csv & wav Folder which contains the audio files *
+
+tar -xf LJSpeech-1.1.tar.bz2
+
+
+*remove the tar file *
+
+rm LJSpeech-1.1.tar.bz2
+
+
+*Change back to the WaveRNN directory*
+
+cd ../src/WaveRNN
+
+
+*** Start preprocessing of the data by running preprocess.py, as mentioned in ReadMe.md***
