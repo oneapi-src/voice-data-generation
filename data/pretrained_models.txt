@@ -1,0 +1,18 @@
+cd src
+git clone https://github.com/fatchord/WaveRNN
+
+cp ./*.py WaveRNN
+cp ./deploy.yaml WaveRNN
+
+mv WaveRNN/optim_eval.py WaveRNN/utils
+
+cd WaveRNN
+
+unzip pretrained/ljspeech.tacotron.r2.180k.zip -d pretrained/tts_weights
+unzip pretrained/ljspeech.wavernn.mol.800k.zip -d pretrained/voc_weights
+
+
+*** follow the data_download_manual.txt ***
+
+
+
